@@ -86,15 +86,15 @@ document.getElementById("tile-position-4-4")=tileObjects[3][3];*/
 
 
 
-document.getElementById("button").addEventListener("click", function() {
-    console.log("click")
-   let score =  document.getElementById('scorenumber');
-   score.textContent = 0;
-    randomStart(tileObjects);
+randomStart(tileObjects);
     updateTiles(tileObjects);
     console.log(tileObjects);
-
-});
+    document.getElementById("button").addEventListener("click", function() { //
+        console.log("click")
+        randomStart(tileObjects);
+        updateTiles(tileObjects);
+        console.log(tileObjects);
+    });
 const matChanged=(clonedArray,tileObjects)=>{ //make copy of mat before and compare it to after
     let count = 0;
     for(let i=0;i<4;i++){
