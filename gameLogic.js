@@ -120,7 +120,7 @@ function addTiles(tileObjects){ //adds two tiles if they have the same value
              }
             }
         }
-        document.getElementById("button").addEventListener("click", function() { //
+        document.getElementById("button").addEventListener("click", function() { 
             currentScore=0;
             let score =  document.getElementById('scorenumber');
             score.textContent = currentScore;
