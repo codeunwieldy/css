@@ -1,4 +1,4 @@
-import{tileObjects,shiftLeft,shiftRight,shiftDown,shiftUp,randomAfterShift,gameState,randomStart,addTiles,transpose,reverse,shiftTogether}from'/gameLogic.js';
+import{tileObjects,shiftLeft,shiftRight,shiftDown,shiftUp,randomAfterShift,gameState,randomStart,addTiles,transpose,reverse,shiftTogether}from'/project-Repository/gameLogic.js';
 window.addEventListener("keydown", function(e) {
     if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
         e.preventDefault();//keeps arrow from moving scrollbar
